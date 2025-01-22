@@ -8,7 +8,7 @@ public class BubbleSortExample {
 		int length = arr.length;
 		int temporalParameter = 0;
 		for(int index = 0; index < length; index++) {
-			for(int index2 = 1; index2 < (length - index); index2++) {
+			for(int index2 = 1; index2 < length; index2++) {
 				if(arr[index2 - 1] > arr[index]) {
 					//swapping left and right elements if left is greater
 					temporalParameter = arr[index2 - 1];
@@ -22,7 +22,7 @@ public class BubbleSortExample {
 	
 	// Main method to run java program
 	public static void main(String [] args) {
-		int[] array = {3, 1, 7, 6};
+		int[] array = {3, 1, 7, 6, 8, 2};
 		// Printing the array to console before sorting;
 		System.out.println("Array Before Bubble Sort:");
 		for(int index = 0; index < array.length; index++) {
